@@ -3,5 +3,14 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+  homes = Home.create({
+  description: "Such a good house",  
+  year_built: "1999", 
+  square_feet: 50, 
+  bedrooms: 2,
+  bathrooms: 2.5,  
+  floors: 2,  
+  availability: true,
+  address: "Salisbury, Vermont, United States", 
+  price: 3333
+  })
