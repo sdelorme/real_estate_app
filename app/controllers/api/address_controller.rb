@@ -5,6 +5,7 @@ class Api::AddressController < ApplicationController
   end
 
   def create
+    results = Geocoder.search(params[:address])
     @home = Home.new(
     description: params[:description],
     year_built: params[:year_built],
@@ -15,8 +16,8 @@ class Api::AddressController < ApplicationController
     availability: params[:availability],
     address: params[:address],
     price: params[:price],
-    latitude: params[:latitude],
-    longitude: params[:longitude]
+    latitude: results.first.coordinates[0],
+    longitude: results.first.coordinates[1]
     )
     @home.save
     render 'show.json.jb'
