@@ -14,7 +14,9 @@ class Api::AddressController < ApplicationController
     floors: params[:floors],
     availability: params[:availability],
     address: params[:address],
-    price: params[:price]
+    price: params[:price],
+    latitude: params[:latitude],
+    longitude: params[:longitude]
     )
     @home.save
     render 'show.json.jb'

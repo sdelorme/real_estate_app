@@ -9,4 +9,6 @@ floors: @home.floors,
 availability: @home.availability,
 address: @home.address,
 price: @home.price,
+latitude: @home.latitude,
+longitude: @home.longitude
 }
