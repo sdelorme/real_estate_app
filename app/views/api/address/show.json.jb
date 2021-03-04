@@ -1,0 +1,12 @@
+{
+id: @home.id,
+description: @home.description,
+year_built: @home.year_built,
+square_feet: @home.square_feet,
+bedrooms: @home.bedrooms,
+bathrooms: @home.bathrooms,
+floors: @home.floors,
+availability: @home.availability,
+address: @home.address,
+price: @home.price,
+}
